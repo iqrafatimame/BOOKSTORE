@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F5F664A-AB5E-4242-A085-5390AC045E5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LAB5_Login_</RootNamespace>
+    <AssemblyName>LAB5%28Login%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adAdminOrUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adAdminOrUser.Designer.cs">
+      <DependentUpon>adAdminOrUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBookDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookDetails.Designer.cs">
+      <DependentUpon>AddBookDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPicture.Designer.cs">
+      <DependentUpon>AddPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKSTOREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchBook.Designer.cs">
+      <DependentUpon>searchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signUpDataSet.cs">
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="signUpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sigupOrLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sigupOrLogin.Designer.cs">
+      <DependentUpon>sigupOrLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="storeDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>storeDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateBook.Designer.cs">
+      <DependentUpon>updateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBooks.Designer.cs">
+      <DependentUpon>viewBooks.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adAdminOrUser.resx">
+      <DependentUpon>adAdminOrUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBookDetails.resx">
+      <DependentUpon>AddBookDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPicture.resx">
+      <DependentUpon>AddPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="searchBook.resx">
+      <DependentUpon>searchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sigupOrLogin.resx">
+      <DependentUpon>sigupOrLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateBook.resx">
+      <DependentUpon>updateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBooks.resx">
+      <DependentUpon>viewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BOOKDataSet.xsc">
+      <DependentUpon>BOOKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKDataSet.xss">
+      <DependentUpon>BOOKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKDataSet1.xsc">
+      <DependentUpon>BOOKDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKDataSet1.xss">
+      <DependentUpon>BOOKDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet.xsc">
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOOKSTOREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOOKSTOREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOOKSTOREDataSet.xss">
+      <DependentUpon>BOOKSTOREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="signUpDataSet.xsc">
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="signUpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>signUpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="signUpDataSet.xss">
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="storeDBDataSet.xsc">
+      <DependentUpon>storeDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="storeDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>storeDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="storeDBDataSet.xss">
+      <DependentUpon>storeDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renee-fisher-wpMtTNPg6vk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kenny-luo-lepXD1_21XM-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-2-book-png-7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
